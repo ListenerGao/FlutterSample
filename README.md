@@ -6,3 +6,4 @@ Flutter学习项目
 | 文件名 | 功能  |
 |:------:|:---:|
 | FlutterDemo | Android Project |
+| flutter_module | Flutter Module |
