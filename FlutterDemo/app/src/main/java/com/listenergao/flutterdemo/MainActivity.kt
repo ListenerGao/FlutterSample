@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.listenergao.flutterdemo.ui.main.SectionsPagerAdapter
+import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,8 +24,10 @@ class MainActivity : AppCompatActivity() {
         val fab: FloatingActionButton = findViewById(R.id.fab)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                    .setAction("Action", null).show()
+
+            startActivity(FlutterActivity.createDefaultIntent(this))
         }
     }
 }
